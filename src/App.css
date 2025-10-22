@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial,;
+  background: #f8fdf8;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #4caf50;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.plant-card img {
+  width: 200px;      /* set a fixed width */
+  height: 200px;     /* or use auto for proportional scaling */
+  object-fit: cover; /* crops the image neatly */
+  border-radius: 10px;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.plant-card, .cart-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
